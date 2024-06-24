@@ -1,22 +1,30 @@
 // Make your Counter class here
 
+// Reviews with Tim:
 class Counter {
-    constructor(count) {
-        this.count = 0
+    #count // E3 
+    constructor() {
+        this.#count = 0 // this object
     }
 
-    // exercise 2
+    /* exercise 1 (changed):
+    class Counter {
+        constructor(count) {
+            this.#count = 0
+        }*/
+
+    // exercise 2 
 
     increment() {
-        this.count++ //++ adds one
+        this.#count++ //++ adds one
     }
 
     reset() {
-        this.count = 0 // set to 0
+        this.#count = 0 // set to 0
     }
 
     getCount() {
-        this.count = this.count // return current count 
+        this.#count = this.#count // return current count. can also use return this.count
     }
 
 }
@@ -50,4 +58,28 @@ Instance Methods in Tech Docs
 (functions)
 
 forgot this. again- stated that count was undefinded - remember this! 
+*/
+
+/* exercise 3:
+private properties: remember from discussion this morning that this is so the values of a property can't be changed 
+
+- Refactor the `count` property to be private, so that it's hidden from
+      outside the class.
+
+Tech docs: use # on property name:
+"the property cannot be accessed or modified directly from outside the class."
+
+--
+
+# added to Counter class, got error:
+Private field '#count' must be declared in an enclosing class
+It needs adding to all mentions of Counter 
+However, when adding to the class, see syntax error "Private identifiers cannot be used as parameters"
+Otherwise, still see error as above... 
+
+--
+
+Reviews with Tim:
+Had to change E1 - original kept for comparison 
+For E3, had to add #count under class (before constructor)
 */

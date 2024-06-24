@@ -37,11 +37,11 @@ current count.
 
 Have a go implementing the following methods:
 
-- [ ] `increment()`, which adds one to `count`
+- [x] `increment()`, which adds one to `count`
 
-- [ ] `reset()`, which sets `count` to `0`
+- [x] `reset()`, which sets `count` to `0`
 
-- [ ] `getCount()`, which returns the current `count`
+- [x] `getCount()`, which returns the current `count`
 
 ## Exercise 3: Private properties
 
