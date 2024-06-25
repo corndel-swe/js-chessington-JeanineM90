@@ -28,27 +28,27 @@ export class Square extends Rectangle {
   #side
 
   constructor(side) {
-    super(width)
-    super(height)
-    this.#side = side
+    super(side, side) // w&h (same measurements)
+    //this.#side = side
   }
 
-
-  area() {
-    return this.#side * this.#side
-  }
-
-  perimeter() {
-    return 4 * this.#side
-  }
-
-  width() {
-    return this.#side
-  }
-
-  height() {
-    return this.#side
-  }
+  /* No longer needed as it's in rectangle- they can be overwritten 
+    area() {
+      return this.#side * this.#side
+    }
+  
+    perimeter() {
+      return 4 * this.#side
+    }
+  ""
+    width() {
+      return this.#side
+    }
+  
+    height() {
+      return this.#side
+    }
+  */
 }
 
 /* Exercise 2: Inheritance:
@@ -73,7 +73,7 @@ Super() is part of the constructor
 
 --
 
-After adding extends:
+After adding extends (before super):
 
     1) should have an area method
     2) should have a perimeter method
