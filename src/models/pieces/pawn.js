@@ -9,7 +9,7 @@ export default class Pawn {
 
   getAvailableMoves(board) {
     // get the square currently occupied by the pawn
-    let location = board.findPiece(this)
+    let location = board.findPiece(this) // finds where we're starting from 
 
     // the list of valid moves
     let moves = []
@@ -30,3 +30,15 @@ export default class Pawn {
     board.movePiece(currentSquare, newSquare)
   }
 }
+
+/*
+getAvailableMoves method: function has been partially implemented so they can take one step forward. (it returns an array of `Square`.)
+
+--
+
+  ✔ can move one square up
+  7) can move one or two squares up on their first move: need to put a limit on how far they can move; the first move has the option of two squares 
+ 
+If the pawn is on the first row, we know it can move two 
+
+*/

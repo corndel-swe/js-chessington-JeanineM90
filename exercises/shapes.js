@@ -70,3 +70,14 @@ export class Circle {
     return this.#radius
   }
 }
+
+/* Exercise 3: Method overriding:
+- Make all the shape classes inherit from `Shape`.
+
+- Override the `getArea` and `getPerimeter` methods in each subclass to
+  return the correct values for that shape.
+
+--
+
+Tech Docs: enables a subclass to provide a specific implementation of a method that is already defined in its superclass
+*/
