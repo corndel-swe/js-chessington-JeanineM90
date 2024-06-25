@@ -83,3 +83,10 @@ Reviews with Tim:
 Had to change E1 - original kept for comparison 
 For E3, had to add #count under class (before constructor)
 */
+
+/* Extension (to do):
+
+Modify the constructor so that it can accept an _optional_ argument as the
+initial count.
+
+*/

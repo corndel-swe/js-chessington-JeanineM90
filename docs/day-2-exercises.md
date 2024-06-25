@@ -13,7 +13,7 @@ Read the docs about
 
 To run the tests for this exercise, run `npm run test:d2e1` in your terminal.
 
-- [ ] Add a static property `PI` to `Maths`. The value of `Maths.PI` should be
+- [x] Add a static property `PI` to `Maths`. The value of `Maths.PI` should be
       `3.14`.
 
 - [ ] Add the static method `Maths.max(a, b)`, which returns the largest of `a`
@@ -34,7 +34,7 @@ Let's start off by reading the documentation on
 Since a `Square` is a special type of `Rectangle`, let's make `Square` _inherit
 from_ `Rectangle`.
 
-- [ ] Use the `extends` keyword in the class definition to make `Square` a
+- [x] Use the `extends` keyword in the class definition to make `Square` a
       subclass of `Rectangle`
 
 - [ ] We also need to call `super` in the constructor of `Square` to call the

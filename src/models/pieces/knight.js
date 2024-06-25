@@ -7,7 +7,15 @@ export default class Knight {
   }
 
   getAvailableMoves(board) {
-    return []
+
+    let location = board.findPiece(this)
+    let moves = []
+
+    if (location.row + 1 < +7 && location.col + 1 <= 7) {
+      moves.push(new Square(location.row + 1, location + 1))
+    }
+
+    return moves
   }
 
   moveTo(board, newSquare) {
@@ -15,3 +23,8 @@ export default class Knight {
     board.movePiece(currentSquare, newSquare)
   }
 }
+
+/*
+L shape, 2 then 1 (2 left 1 up etc)
+Use King 
+*/

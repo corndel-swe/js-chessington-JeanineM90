@@ -15,3 +15,8 @@ export default class Rook {
     board.movePiece(currentSquare, newSquare)
   }
 }
+
+/*
+See Bishop- it's simplified, but will still need 4 for loops 
+Moves only in an invidiual direction 
+*/

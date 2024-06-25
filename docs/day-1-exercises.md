@@ -50,7 +50,7 @@ Finally, read about
 
 You can run the tests for this exercise using `npm run test:d1e3`.
 
-- [ ] Refactor the `count` property to be private, so that it's hidden from
+- [x] Refactor the `count` property to be private, so that it's hidden from
       outside the class.
 
 ## Extensions
